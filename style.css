@@ -1,0 +1,47 @@
+body{font-family: 'Abril Fatface', cursive;}
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+.main
+{
+	
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 6px;
+	text-align: center;
+}
+
+.column
+{
+	flex:25%;
+	max-width: 25%;
+	padding: 0 6px;
+}
+.column img
+{
+	width: 100%;
+	vertical-align: middle;
+	margin-top: 2%;
+	outline: 10px solid transparent;
+	outline-offset: -10px;
+}
+
+.column img:hover
+{
+	animation: word 2s;
+}
+
+@keyframes word 
+{
+	from 
+	{
+		outline: 10px solid transparent;
+		outline-offset: -10px;
+	}
+
+	to
+	{
+		outline: 10px solid #423F3F;
+		outline-offset: -10px;
+		transition: 2s;
+	}
+}
